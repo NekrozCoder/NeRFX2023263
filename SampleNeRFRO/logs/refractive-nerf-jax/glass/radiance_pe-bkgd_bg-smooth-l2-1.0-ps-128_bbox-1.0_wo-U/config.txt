@@ -1,0 +1,25 @@
+# Parameters for Config:
+# ==============================================================================
+Config.all_weight_name = 'all'
+Config.ior_weight_name = None
+Config.kernel_sigma = 3.0
+Config.kernel_size = 5
+Config.radiance_weight_name = None
+Config.voxel_grid = 'voxelize_uni384_bbox-3.5'
+
+# Parameters for NerfModel:
+# ==============================================================================
+NerfModel.bd_cut_dist = 6.0
+NerfModel.use_mask_bbox = False
+
+# Parameters for PathSampler:
+# ==============================================================================
+PathSampler.normal_radius_scale = 0.1
+
+# Parameters for VoxMLP:
+# ==============================================================================
+VoxMLP.annealed = True
+VoxMLP.interp_method = 'linear3'
+VoxMLP.normalized = False
+VoxMLP.use_direct_output = True
+VoxMLP.use_residual = True
